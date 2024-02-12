@@ -1,5 +1,7 @@
 'use strict';
 
+debugger;
+
 /* Declaring and Initializing
 
   you can also initialize a variable with a value
@@ -19,3 +21,5 @@ let turtle = 'Vinnie';
 let food = 'lettuce';
 
 let x = 'abc';
+
+console.log(turtle);

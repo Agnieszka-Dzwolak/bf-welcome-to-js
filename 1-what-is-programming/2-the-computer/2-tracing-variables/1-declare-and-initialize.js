@@ -1,5 +1,7 @@
 'use strict';
 
+debugger;
+
 /*
   practice tracing it different ways:
   - use "variables" to check how each variable is used
@@ -31,3 +33,5 @@ let declaredAndInitialized = 'hello';
 
 // read declaredAndInitialized: "hello"
 declaredAndInitialized;
+
+console.log(onlyDeclared);
