@@ -6,15 +6,14 @@ import {
 } from '../../../../../../lib/dom-io/index.js';
 
 whenFormDataChanges('user-info', () => {
-  debugger;
-
   console.log('\n--- form data changed ---');
 
   // --- read user input ---
 
-  let name = readString('the-name');
+  let firstName = readString('first-name');
+  let lastName = readString('last-name');
 
-  console.log(name);
+  console.log(firstName, lastName);
 
   // --- create a message ---
 

@@ -40,3 +40,5 @@ whenFormDataChanges('example-data', () => {
   // writes text into a <pre> tag, anything that was there will be overwritten
   displayString('example-output', message); // id="example-output"
 });
+
+console.log('--- the script has finished loading ---');
