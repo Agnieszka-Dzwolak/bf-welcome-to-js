@@ -1,5 +1,7 @@
 'use strict';
 
+debugger;
+
 let toReverse = null;
 while (toReverse === null) {
   toReverse = prompt('enter something to reverse:');
@@ -17,3 +19,12 @@ alert(transformation);
 /*  ===== Challenges =====
   - Put the characters back in the right order after the string was reversed.
 */
+
+let againReverse = '';
+for (let nextChar of backwards) {
+  againReverse = nextChar + againReverse;
+}
+
+let transformationAgain = backwards + ' --> ' + againReverse;
+
+alert(transformationAgain);

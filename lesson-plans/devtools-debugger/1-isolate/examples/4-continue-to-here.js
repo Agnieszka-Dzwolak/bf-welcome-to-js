@@ -18,6 +18,8 @@
 
 */
 
+debugger;
+
 let didClickOk = confirm('please click "ok":');
 
 let message = '';
