@@ -5,23 +5,22 @@ import {
 } from '../../../../../../../lib/dom-io/index.js';
 
 /*
-  environment:
+  environment: chrome
 
-  name:
-  message:
+  name: SyntaxError
+  message: Invalid left-hand side expression in prefix operation
 
-  location:
+  location: line 23
 
-  life cycle:
+  life cycle: creation
 
-  the mistake:
+  the mistake: string wasn't in quotation marks
 
-  the fix(es):
+  the fix(es): add quotation marks
 */
 
 whenFormDataChanges('input', () => {
-  console.log(--- form data changed ---);
-
+  console.log('--- form data changed ---');
   // --- read the user's input ---
 
   let userText = readString('to-mirror');

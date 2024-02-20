@@ -5,18 +5,18 @@ import {
 } from '../../../../../../../lib/dom-io/index.js';
 
 /*
-  environment:
+  environment: chrome
 
-  name:
-  message:
+  name: ReferenceError
+  message: DisplayString is not defined
 
-  location:
+  location: line 46
 
-  life cycle:
+  life cycle: execution 
 
-  the mistake:
+  the mistake: using non exist function DisplayString
 
-  the fix(es):
+  the fix(es): use displayString function
 */
 
 whenFormDataChanges('sleep-info', () => {
@@ -37,11 +37,11 @@ whenFormDataChanges('sleep-info', () => {
     advice = 'Study some flashcards.';
   } else if (isTired && !hasTime) {
     advice = 'Make some coffee.';
-  } else if (!isTired && !hasTime) {
+  } else {
     advice = 'Have a great day!';
   }
 
   // --- display the advice ---
 
-  DisplayString('advice-area', advice);
+  displayString('advice-area', advice);
 });
