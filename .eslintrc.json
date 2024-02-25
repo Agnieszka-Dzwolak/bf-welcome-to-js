@@ -3,6 +3,7 @@
   "env": {
     "browser": false
   },
+  "linebreak-style": ["error", "windows"],
   "parserOptions": {
     "ecmaVersion": 2021,
     "sourceType": "script"
