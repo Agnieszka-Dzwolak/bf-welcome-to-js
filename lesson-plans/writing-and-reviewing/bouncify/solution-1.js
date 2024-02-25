@@ -17,9 +17,48 @@
     has spaces and letters:
       'good bye'      -> 'GoOd ByE'
       ' row a boat '  -> ' RoW a BoAt '
-    has everything:
+    has everything
       '12 Good Byes!'     -> '12 GoOd ByEs!'
       'h1! Hoe gaat het?' -> 'H1! hOe GaAt HeT?'
       '0 . x . 0'         -> '0 . X . 0'
 
 */
+
+let text = '';
+
+while (true) {
+  const input = prompt('enter some text, the letters will be bouncified');
+
+  if (input === null) {
+    alert('there is no escape!');
+    continue;
+  }
+
+  if (input === '') {
+    alert('no empty input, try again.');
+    continue;
+  }
+  if (input) {
+    text = input;
+    break;
+  }
+}
+
+const specialCharacters = '!"#$%&()*+-/0123456789:;<=>?@, ';
+let newText = '';
+let isUpperCase = true;
+
+for (const char of text) {
+  if (specialCharacters.indexOf(char) === -1) {
+    if (isUpperCase) {
+      newText += char.toUpperCase();
+    } else {
+      newText += char.toLowerCase();
+    }
+    isUpperCase = !isUpperCase;
+  } else {
+    newText += char;
+  }
+}
+
+alert(newText);
